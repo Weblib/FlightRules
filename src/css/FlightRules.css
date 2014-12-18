@@ -568,72 +568,75 @@ i {
 .i_publications {
 	background-position: 0 -196px;
 }
-.i_display_100 {
+.i_subscriptions {
 	background-position: -28px 0;
 }
-.i_display_50 {
-	background-position: -28px -28px;
-}
-.i_display_33 {
-	background-position: -28px -56px;
-}
-.i_display_mobile {
-	background-position: -28px -84px;
-}
-.i_display_tablet {
-	background-position: -28px -112px;
-}
-.i_display_desktop {
-	background-position: -28px -140px;
-}
-.i_display_fullwidth {
-	background-position: -28px -168px;
-}
-.i_add {
+
+.i_display_100 {
 	background-position: -56px 0;
 }
-.i_rotate {
+.i_display_50 {
 	background-position: -56px -28px;
 }
-.i_edit {
+.i_display_33 {
 	background-position: -56px -56px;
 }
-.i_delete {
+.i_display_mobile {
 	background-position: -56px -84px;
 }
-.i_sync {
+.i_display_tablet {
 	background-position: -56px -112px;
 }
-.i_danger {
+.i_display_desktop {
 	background-position: -56px -140px;
 }
-.i_download {
+.i_display_fullwidth {
 	background-position: -56px -168px;
 }
-.i_upload {
-	background-position: -56px -196px;
-}
-.i_file_png {
+.i_add {
 	background-position: -84px 0;
 }
-.i_file_xls {
+.i_rotate {
 	background-position: -84px -28px;
 }
-.i_file_ppt {
+.i_edit {
 	background-position: -84px -56px;
 }
-.i_file_doc {
+.i_delete {
 	background-position: -84px -84px;
 }
-
-.i_ok {
-	background-position: 0 0;
+.i_sync {
+	background-position: -84px -112px;
 }
-.i_error {
-	background-position: 0 0;
+.i_danger {
+	background-position: -84px -140px;
 }
-.i_unknown {
-	background-position: 0 0;
+.i_download {
+	background-position: -84px -168px;
+}
+.i_upload {
+	background-position: -84px -196px;
+}
+.i_file_png {
+	background-position: -112px 0;
+}
+.i_file_xls {
+	background-position: -112px -28px;
+}
+.i_file_ppt {
+	background-position: -112px -84px;
+}
+.i_file_doc {
+	background-position: -112px -56px;
+}
+.i_status_ok {
+	background-position: -140px 0;
+}
+.i_status_error {
+	background-position: -140px -28px;
+}
+.i_status_unknown {
+	background-position: -140px -56px;
 }
 /******************************************************************************** PERC BAR ********************************************************************************/
 .ctlist li .percbar {
