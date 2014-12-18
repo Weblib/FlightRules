@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../bower_components/jquery-ui/themes/cupertino/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="../src/css/fuselage.css" />
+	<style type="text/css">
+		.colorsample {
+			display:inline-block;
+			vertical-align:top;
+			width:100px;
+			height:100px;
+			padding:10px;
+			font-weight:500;
+		}
+	/******************************************************************************** ACTION BUTTONS ********************************************************************************/
+
+	</style>
+	<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../src/js/fuselage.js"></script>
+</head>
+<body>
+	<h3>Control Tower Fuselage 1.0</h3>
+	<ul>
+		<li><a href="#typography">Typography</a></li>
+		<li><a href="#colors">Colors</a></li>
+		<li><a href="#buttons">Buttons</a></li>
+		<li><a href="#icons">Icons</a></li>
+		<li><a href="#gridlayout">Grid Layout</a></li>
+		<li><a href="#navmenu">Nav menu</a></li>
+		<li><a href="#lists">Lists</a></li>
+		<li><a href="#filterandactionbar">Filter and action bar</a></li>
+		<li><a href="#pagerandsteps">Pager and steps</a></li>
+		<li><a href="#tabs">Tabs</a></li>
+		<li><a href="#applicationicons">Application icons</a></li>
+		<li><a href="#forms">Forms</a></li>
+		<li><a href="#infoboxes">Info boxes</a></li>
+	</ul>
+
+	<h4 id="typography">Typography</h4>
+	<section style="max-width:1024px;">
+		<!--<h3>Main title : h3</h3>
+		<h4>Page or section title : h4</h4>
+		<h5>sub section title : h5</h5>-->
+		<p >Normal text : Roboto Light<br/> The quick brown fox jumps over the lazy dog</p>
+		<p class="f_bold">Bold text: Roboto Regular<br/> The quick brown fox jumps over the lazy dog</p>
+		<p class="t_extralarge">Giant text : .t_extralarge<br/>+ 1000 %</p>
+		<p class="t_large">Large text : .t_large<br/>+ 1000 % is a lot</p>
+	</section>
+
+	<h4 id="colors">Colors</h4>
+	<section style="max-width:1024px;">
+		<div class="colorsample gray" style="color:white">
+			Default<br/>
+			Neutral<br/>
+			Navigate
+		</div>
+		<div class="colorsample blue" style="color:white">
+			Positive<br/>
+			Action<br/>
+			Save<br/>
+			Create
+		</div>
+		<div class="colorsample red" style="color:white">
+			Negative<br/>
+			Delete<br/>
+			Danger
+		</div>
+		<div class="colorsample orange" style="color:white">
+			Warning<br/>
+			Cancel
+		</div>
+		<div class="colorsample black" style="color:white">
+			Default on dark</br>
+		</div>
+
+		<p class="c_blue">Blue text: .c_blue<br/> The quick brown fox jumps over the lazy dog</p>
+		<p class="c_orange">Orange text: .c_orange<br/> The quick brown fox jumps over the lazy dog</p>
+		<p class="c_red">Red text: .c_red<br/> The quick brown fox jumps over the lazy dog</p>
+		<div>
+	</section>
+
+	<h4 id="buttons">Buttons</h4>
+	<h5>Simple button</h5>
+	<section>
+		<a class="btn">Bonjour</a>
+		<input class="btn" type="button" value="Bonjour"/>
+		<button class="btn">Bonjour</button>
+		<br/>
+		<a class="btn blue">Bonjour</a>
+		<input class="btn blue" type="button" value="Bonjour"/>
+		<button class="btn blue">Bonjour</button>
+		<br/>
+		<a class="btn red">Bonjour</a>
+		<input  class="btn red" type="button" value="Bonjour"/>
+		<button class="btn red">Bonjour</button>
+		<br/>
+		<a class="btn orange">Bonjour</a>
+		<input class="btn orange" type="button" value="Bonjour"/>
+		<button class="btn orange">Bonjour</button>
+		<br/>
+		<div style="background:#333;padding:15px;">
+		<a class="btn black">Bonjour</a>
+		<input  class="btn black" type="button" value="Bonjour"/>
+		<button class="btn black">Bonjour</button>
+		</div>
+	</section>
+
+	<h5>Buttons + icon<a class="btn blue entity_create_btn"><i class="i_add"></i>Create new entity</a></h5>
+	<section>
+		<a class="btn blue"><i class="i_sync"></i>Sync</a>
+		<a class="btn red"><i class="i_add"></i>Add</a>
+	</section>
+	<h5>Action button</h5>
+	<section>
+		<a class="btn btn-action"><i class="i_sync"></i></a>
+		<a class="btn btn-action orange"><i class="i_add"></i></a>
+	</section>
+
+	<h4 id="icons">Icons</h4>
+	<section>
+		<a class="btn btn-action"><i class="i_dash"></i></a> dash<br/>
+		<a class="btn btn-action"><i class="i_contents"></i></a> contents<br/>
+		<a class="btn btn-action"><i class="i_surveys"></i></a> surveys<br/>
+		<a class="btn btn-action"><i class="i_help"></i></a> help<br/>
+		<a class="btn btn-action"><i class="i_tickets"></i></a> tickets<br/>
+		<a class="btn btn-action"><i class="i_downloads"></i></a> downloads<br/>
+		<a class="btn btn-action"><i class="i_devices"></i></a> devices<br/>
+		<a class="btn btn-action"><i class="i_publications"></i></a> publications<br/>
+		<br/>
+		<a class="btn btn-action"><i class="i_display_100"></i></a> display_100<br/>
+		<a class="btn btn-action"><i class="i_display_50"></i></a> display_50<br/>
+		<a class="btn btn-action"><i class="i_display_33"></i></a> display_33<br/>
+		<a class="btn btn-action"><i class="i_display_mobile"></i></a> display_mobile<br/>
+		<a class="btn btn-action"><i class="i_display_tablet"></i></a> display_tablet<br/>
+		<a class="btn btn-action"><i class="i_display_desktop"></i></a> display_desktop<br/>
+		<a class="btn btn-action"><i class="i_display_fullwidth"></i></a> display_fullwidth<br/>
+		<br/>
+		<a class="btn btn-action"><i class="i_add"></i></a> add<br/>
+		<a class="btn btn-action"><i class="i_rotate"></i></a> rotate<br/>
+		<a class="btn btn-action"><i class="i_edit"></i></a> edit<br/>
+		<a class="btn btn-action"><i class="i_delete"></i></a> delete<br/>
+		<a class="btn btn-action"><i class="i_sync"></i></a> sync<br/>
+		<a class="btn btn-action"><i class="i_danger"></i></a> danger<br/>
+		<a class="btn btn-action"><i class="i_download"></i></a> download<br/>
+		<a class="btn btn-action"><i class="i_upload"></i></a> upload<br/>
+		<br/>
+		<a class="btn btn-action"><i class="i_file_png"></i></a> file_png<br/>
+		<a class="btn btn-action"><i class="i_file_xls"></i></a> file_xls<br/>
+		<a class="btn btn-action"><i class="i_file_ppt"></i></a> file_ppt<br/>
+		<a class="btn btn-action"><i class="i_file_doc"></i></a> file_doc<br/>
+		<br/>
+		<a class="btn btn-action"><i class="i_status_ok"></i></a> status_ok<br/>
+		<a class="btn btn-action"><i class="i_status_error"></i></a> status_error<br/>
+		<a class="btn btn-action"><i class="i_status_unknown"></i></a> status_unknown<br/>
+	</section>
+
+	<h4 id="gridlayout">Grid Layout</h4>
+	<h5>/2s Style</h5>
+	<section>
+		<div class="col25 block">
+			<h4>Block 25%</h4>
+			<div class="box">Bonjour, je suis une boite de contenu !!! <:-)</div>
+			<div class="footer">footer !!!</div>
+		</div>
+		<div class="col25 block">
+			<h4><a href="#">This one is a link</a></h4>
+			<div class="box">Bonjour, je suis une boite de contenu !!! <:-)</div>
+			<div class="footer">footer !!!</div>
+		</div>
+		<div class="col50 block">
+			<h4>Block 50%</h4>
+			<div class="box">Bonjour, je suis une boite de contenu !!! <:-)</div>
+			<div class="footer">footer !!!</div>
+		</div>
+		<div class="col25 block">
+			<h4>Block 25%</h4>
+			<div class="box">Bonjour, je suis une boite de contenu !!! <:-)</div>
+			<div class="footer">footer !!!</div>
+		</div>
+		<div class="col75 block">
+			<h4>Block 75%</h4>
+			<div class="box">Bonjour, je suis une boite de contenu !!! <:-)</div>
+			<div class="footer">footer !!!</div>
+		</div>
+	</section>
+	<h5>/3s Style</h5>
+	<section>
+		<div class="col33 block">
+			<h4>Block 33%</h4>
+			<div class="box">Bonjour, je suis une boite de contenu !!! <:-)</div>
+			<div class="footer">footer !!!</div>
+		</div>
+		<div class="col33 block">
+			<h4>Block 33%</h4>
+			<div class="box">Bonjour, je suis une boite de contenu !!! <:-)</div>
+			<div class="footer">footer !!!</div>
+		</div>
+		<div class="col33 block">
+			<h4>Block 33%</h4>
+			<div class="box">Bonjour, je suis une boite de contenu !!! <:-)</div>
+			<div class="footer">footer !!!</div>
+		</div>
+		<div class="col33 block">
+			<h4>Block 33%</h4>
+			<div class="box">Bonjour, je suis une boite de contenu !!! <:-)</div>
+			<div class="footer">footer !!!</div>
+		</div>
+		<div class="col66 block">
+			<h4>Block 66%</h4>
+			<div class="box">Bonjour, je suis une boite de contenu !!! <:-)</div>
+			<div class="footer">footer !!!</div>
+		</div>
+		<div class="col100 block">
+			<h4>Block 100%</h4>
+			<div class="box">Bonjour, je suis une boite de contenu !!! <:-)</div>
+			<div class="footer">footer !!!</div>
+		</div>
+	</section>
+
+	<h4 id="navmenu">Nav Menu</h4>
+	<section style="background:#333">
+		<ul class="darknav">
+			<li class="active"><a href="#"><i class="i_dash"></i>Dashboard</a></li>
+				<li class="darknav_child" ><a href="#"><i class="i_dash"></i>Child</a></li>
+				<li class="darknav_child active" ><a href="#">No icon</a></li>
+			<li><a href="#"><i class="i_contents"></i>Contents</a></li>
+			<li><a href="#"><i class="i_surveys"></i>Surveys</a></li>
+			<li><a href="#"><i class="i_help"></i>Help</a></li>
+			<li><a href="#"><i class="i_tickets"></i>Tickets</a></li>
+				<li class="darknav_child" ><a href="#"><i class="i_dash"></i>Child</a></li>
+			<li><a href="#"><i class="i_downloads"></i>Downloads</a></li>
+			<li><a href="#"><i class="i_devices"></i>Devices</a></li>
+			<li><a href="#"><i class="i_publications"></i>Publications</a></li>
+		</ul>
+	</section>
+
+	<h4 id="lists">Lists</h4>
+	<h5>Simple list</h5>
+	<section>
+		<ul class="ctlist">
+			<li class="tableheader"><div>Header</div><div>Second title</div><div>Third</div></li>
+			<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div></li>
+			<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div></li>
+			<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div></li>
+			<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div></li>
+			<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div></li>
+		</ul>
+	</section>
+	<h5>Complex list (dropdown item content)</h5>
+	<section>
+		<input value="Collapse all" type="button" class="btn" id="collapseAll">
+		<input value="Expand all" type="button" class="btn" id="expandAll">
+
+	<ul id="liste" class="ctlist">
+		<li class="tableheader">
+			<div class="item_wrap">
+			    <div class="item">
+					<div class="expandplaceholder"> </div>
+					<div style="width:30%;">Header label</div>
+					<div style="width:30%;">Header label</div>
+					<div style="width:28%;">Header label</div>
+			    </div>
+			</div>
+		</li>
+		<li>
+			<div class="item_wrap">
+			    <div class="item">
+			        <div class="expand closed"></div>
+					<div style="width:30%;">an item</div>
+					<div style="width:30%;">value</div>
+					<div style="width:28%;">value</div>
+			    </div>
+			    <div class="item_subcontent">
+			        <ul class="ctlist">
+						<li class="tableheader"><div>Header</div><div>Second title</div><div>Third</div><div>Fourth Title</div></li>
+						<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div><div>Youpi</div></li>
+						<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div><div>Youpi</div></li>
+						<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div><div>Youpi</div></li>
+						<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div><div>Youpi</div></li>
+						<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div><div>Youpi</div></li>
+					</ul>
+			    </div>
+			</div>
+		</li>
+		<li>
+			<div class="item_wrap">
+			    <div class="item">
+			        <div class="expand closed"></div>
+					<div style="width:30%;">another item</div>
+					<div style="width:30%;">value</div>
+					<div style="width:28%;">value</div>
+			    </div>
+			    <div class="item_subcontent">
+			        <ul class="ctlist">
+						<li class="tableheader"><div>Header</div><div>Second title</div><div>Third</div><div>Fourth Title</div></li>
+						<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div><div>Youpi</div></li>
+						<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div><div>Youpi</div></li>
+						<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div><div>Youpi</div></li>
+						<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div><div>Youpi</div></li>
+						<li><div>Lorem</div><div>Ipsum</div><div>Dolor</div><div>Youpi</div></li>
+					</ul>
+			    </div>
+			</div>
+		</li>
+	</ul>
+	</section>
+
+	<h4 id="filterandactionbar">Filter and action bar</h4>
+	<section>
+		<p>Left hand side: Display options & actions</p>
+		<p>Right hand side: Filter and search options</p>
+		<div class="greybar">
+			<a value="100" class="btn btn-action i_large viewToggle"><i class="i_display_100"></i></a>
+			<a value="50" class="btn btn-action i_medium viewToggle"><i class="i_display_50"></i></a>
+			<a value="33" class="btn btn-action i_small viewToggle"><i class="i_display_33"></i></a>
+			<span class="checklist">Checklist
+				<form method="POST" action="/en/async/update/DashConf" id="updateDashConfForm">
+				<ul>
+					<li>
+						<label for="s_35elts_top_hits"><input type="hidden" value="0" name="35"><input type="checkbox" checked="" value="1" name="35" moduleid="35" id="s_35elts_top_hits" class="moduleselect"> Top 10 most used applications </label>
+					</li>
+					<li>
+						<label for="s_36elts_top_dur"><input type="hidden" value="0" name="36"><input type="checkbox" checked="" value="1" name="36" moduleid="36" id="s_36elts_top_dur" class="moduleselect"> Top 10 longest used applications </label>
+					</li>
+				</ul>
+				</form>
+			</span>
+
+			<div class="pull-right">
+				<select name="posfilter" id="posfilter">
+					<option value="">Select a point of sale</option>
+					<option value="">----------------------</option>
+					<option value="1521">Roermond Hamstraat</option>
+					<option value="1507">Salomon</option>
+				</select>
+
+				<input type="text" placeholder="date from" value="2014-10-28" name="datefrom" id="datefrom" class="datepicker">
+				<input type="text" placeholder="date to" value="2014-11-27" name="dateto" id="dateto" class="datepicker">
+
+				<input type="button" value="filter" id="filter_btn" href="#" class="btn">
+			</div>
+		</div>
+
+		<div class="greybar">
+			<div class="pull-right">
+				<input class="search" type="text" placeholder="Search">
+				<select class="langfilter">
+					<option value="">Any language</option>
+					<option value="en">en - English</option>
+					<option value="es">es - Español</option>
+				</select>
+				<select class="genrefilter">
+					<option value="">Any genre</option>
+					<option value="Press">Press</option>
+					<option value="Game">Game</option>
+				</select>
+				<select class="orientationfilter">
+					<option value="">Any orientation</option>
+					<option value="portrait">Portrait</option>
+					<option value="landscape">Landscape</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="greybar">
+			<input value="Expand all" class="btn" type="button">
+			<input value="Collapse all" class="btn" type="button">
+
+			<div class="pull-right">
+				<input type="text" class="search" placeholder="search" id="search_field">
+
+				<select id="status_select">
+					<option value="">Status</option>
+					<option value="up">Up</option>
+					<option value="down">Down</option>
+					<option value="dis">Monitoring disabled</option>
+				</select>
+
+				<select id="platform_select">
+					<option value="">Platform</option>
+				<option value="iPads">iPads</option><option value="Android">Android</option><option value="Router">Router</option></select>
+			</div>
+		</div>
+
+	</section>
+
+	<h4 id="pagerandsteps">Pager & step</h4>
+	<div class="pager" data-pagerid="1">
+		<ul>
+			<li class="active">
+				<a data-target="1">Page 1</a></li>
+			<li><a data-target="2">Page 2</a></li>
+			<li><a data-target="3">Page 3</a></li>
+			<li><a data-target="4">Page 4</a></li>
+		</ul>
+	</div>
+	<section data-pagerid="1">
+		<div class="step active" data-stepid="1"><h5>Page 1</h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper dolor est. Integer tristique nisl eu est ultricies, in faucibus est iaculis. Donec sit amet consequat nisl. Sed iaculis erat a malesuada volutpat. Nam efficitur sodales felis, vel ullamcorper turpis tincidunt convallis. Nullam vel eros vitae odio placerat lobortis quis vel mi. </div>
+		<div class="step" data-stepid="2"><h5>Page 2</h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper dolor est. Integer tristique nisl eu est ultricies, in faucibus est iaculis. Donec sit amet consequat nisl. Sed iaculis erat a malesuada volutpat. Nam efficitur sodales felis, vel ullamcorper turpis tincidunt convallis. Nullam vel eros vitae odio placerat lobortis quis vel mi. </div>
+		<div class="step" data-stepid="3"><h5>Page 3</h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper dolor est. Integer tristique nisl eu est ultricies, in faucibus est iaculis. Donec sit amet consequat nisl. Sed iaculis erat a malesuada volutpat. Nam efficitur sodales felis, vel ullamcorper turpis tincidunt convallis. Nullam vel eros vitae odio placerat lobortis quis vel mi. </div>
+		<div class="step" data-stepid="4"><h5>Page 4</h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper dolor est. Integer tristique nisl eu est ultricies, in faucibus est iaculis. Donec sit amet consequat nisl. Sed iaculis erat a malesuada volutpat. Nam efficitur sodales felis, vel ullamcorper turpis tincidunt convallis. Nullam vel eros vitae odio placerat lobortis quis vel mi. </div>
+	</section>
+
+	<h4 id="tabs">Tabs</h4>
+	<div class="pager tabs" data-pagerid="2">
+		<ul>
+			<li class="active">
+				<a data-target="1">Page 1</a></li>
+			<li><a data-target="2">Page 2</a></li>
+			<li><a data-target="3">Page 3</a></li>
+			<li><a data-target="4">Page 4</a></li>
+		</ul>
+	</div>
+	<section data-pagerid="2">
+		<div class="step active" data-stepid="1"><h5>Tab 1</h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper dolor est. Integer tristique nisl eu est ultricies, in faucibus est iaculis. Donec sit amet consequat nisl. Sed iaculis erat a malesuada volutpat. Nam efficitur sodales felis, vel ullamcorper turpis tincidunt convallis. Nullam vel eros vitae odio placerat lobortis quis vel mi. </div>
+		<div class="step" data-stepid="2"><h5>Tab 2</h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper dolor est. Integer tristique nisl eu est ultricies, in faucibus est iaculis. Donec sit amet consequat nisl. Sed iaculis erat a malesuada volutpat. Nam efficitur sodales felis, vel ullamcorper turpis tincidunt convallis. Nullam vel eros vitae odio placerat lobortis quis vel mi. </div>
+		<div class="step" data-stepid="3"><h5>Tab 3</h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper dolor est. Integer tristique nisl eu est ultricies, in faucibus est iaculis. Donec sit amet consequat nisl. Sed iaculis erat a malesuada volutpat. Nam efficitur sodales felis, vel ullamcorper turpis tincidunt convallis. Nullam vel eros vitae odio placerat lobortis quis vel mi. </div>
+		<div class="step" data-stepid="4"><h5>Tab 4</h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper dolor est. Integer tristique nisl eu est ultricies, in faucibus est iaculis. Donec sit amet consequat nisl. Sed iaculis erat a malesuada volutpat. Nam efficitur sodales felis, vel ullamcorper turpis tincidunt convallis. Nullam vel eros vitae odio placerat lobortis quis vel mi. </div>
+	</section>
+
+	<h4 id="applicationicons">Application icons</h4>
+	<section>
+		<img class="icon_preview"> <img class="icon_preview" src="./img/clippy.png"> <img class="icon_preview" src="./img/canard.jpg">
+	</section>
+
+	<h4 id="forms">Forms</h4>
+	<section>
+		<div class="step active">
+			<div class="block">
+				<h4>Forms</h4>
+				<div class="formbox">
+				<h5>Form block</h5>
+					<div class="formfield">
+						<label>Simple text field</label>
+						<input type="text" placeholder="insert placeholder here">
+					</div>
+					<div class="formfield">
+						<label>Select an option</label>
+						<select>
+							<option value="">Status</option>
+							<option value="">Up</option>
+							<option value="">Down</option>
+							<option value="">Monitoring disabled</option>
+						</select>
+					</div>
+					<div class="formfield">
+						<label>Number</label>
+						<input type="number">
+					</div>
+					<div class="formfield">
+						<label>Text Area</label>
+						<textarea></textarea>
+					</div>
+				</div>
+				<div class="formbox">
+				<h5>Upload fields</h5>
+					<div class="formfield">
+						<label>File upload</label>
+						<form class="file_form" enctype="multipart/form-data" method="POST" action="/api/chunkuploader">
+							<input class="filename_preview appformfield" type="text" disabled="" value="">
+							<a class="fileSelect btn"><i class="i_upload"></i>Upload</a>
+							<input class="appformfield filefield" type="file" value="notimportant" download="yes" optiontype="file" name="file" somme="" path="" filename="" fieldtype="file">
+						</form>
+					</div>
+					<div class="formfield">
+						<label>Icon upload</label>
+						<form class="icon_form" enctype="multipart/form-data" method="POST" action="/api/chunkuploader">
+							<img class="icon_preview" somme="" path="" filename=""><a class="fileSelect btn"><i class="i_upload"></i>Upload</a>
+							<input class="appformfield filefield" type="file" value="notimportant" download="yes" optiontype="icone" name="appicon" somme="" path="" filename="" fieldtype="file">
+						</form>
+					</div>
+				</div>
+				<div class="formbox">
+				<h5>Radio and Checkboxes</h5>
+					<div class="formfield">
+						<label>Radio buttons</label>
+						<div class="input_group">
+							<input name="group1" type="radio" value="ok" id="group1input1"><label for="group1input1">label</label>
+							<input name="group1" type="radio" value="ok" id="group1input2"><label for="group1input2">label</label>
+							<input name="group1" type="radio" value="ok" id="group1input3"><label for="group1input3">label</label>
+						</div>
+					</div>
+					<div class="formfield">
+						<label>Single checkbox</label>
+						<div class="input_group">
+							<input name="group4" type="checkbox" value="ok" id="group4input1">
+						</div>
+					</div>
+					<div class="formfield">
+						<label>Checkboxes</label>
+						<div class="input_group">
+							<input name="group2" type="checkbox" value="ok" id="group2input1"><label for="group2input1">label</label>
+							<input name="group2" type="checkbox" value="ok" id="group2input2"><label for="group2input2">label</label>
+							<input name="group2" type="checkbox" value="ok" id="group2input3"><label for="group2input3">label</label>
+						</div>
+					</div>
+					<div class="formfield">
+						<label>Checkboxes with image label</label>
+						<div class="input_group">
+							<input name="group3" type="checkbox" value="ok" id="group3input1"><label for="group3input1"><img src="./img/Victoria.jpg"></label>
+							<input name="group3" type="checkbox" value="ok" id="group3input2"><label for="group3input2"><img src="./img/NicholasandGeorge.jpg"></label>
+							<input name="group3" type="checkbox" value="ok" id="group3input3"><label for="group3input3"><img src="./img/Marie-Caroline.jpg"></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<h4 id="infoboxes">Info boxes</h4>
+	<section>
+		<div class="infobox">Ceci est une boite d'info</div>
+		<div class="infobox warning">Ceci est une boite d'info importante</div>
+	</section>
+
+	<h4 id="commitwarning">Commit warning</h4>
+	<section>
+		<div class="col75 block">
+			<div class="block_warning">Changes made to this configuration are yet to be sent to production. <a class="btn orange"><i class="i_sync"></i>Synchronize</a></div>
+			<h4>Block 75%</h4>
+			<div class="box">Bonjour, je suis une boite de contenu !!! <:-)</div>
+			<div class="footer">footer !!!</div>
+		</div>
+	</section>
+
+	<h4 id="loadingbox">Loading box</h4>
+	<section>
+		<div class="col75 block">
+			<h4>Block 75%</h4>
+			<div class="box loading_icon"></div>
+			<div class="footer">footer !!!</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		$( "#datefrom" ).datepicker({
+			defaultDate: "+1w",
+			numberOfMonths: 1,
+			dateFormat: "yy-mm-dd",
+			maxDate: "-1D",
+			onClose: function( selectedDate ) {
+				$( "#dateto" ).datepicker( "option", "minDate", selectedDate );
+			}
+		});
+		$( "#dateto" ).datepicker({
+			defaultDate: "+1w",
+			numberOfMonths: 1,
+			dateFormat: "yy-mm-dd",
+			maxDate: "-1D",
+			onClose: function( selectedDate ) {
+				$( "#datefrom" ).datepicker( "option", "maxDate", selectedDate );
+			}
+		});
+	</script>
+</body>
+</html>

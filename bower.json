@@ -1,0 +1,14 @@
+{
+  "name": "FlightRules",
+  "version": "1.0.0",
+  "main": "path/to/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+	"jquery-ui": "~1.11"
+  },
+  "devDependencies": {}
+}
