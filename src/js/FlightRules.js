@@ -8,8 +8,14 @@
 		$('.pager[data-pagerid="'+pagerid+'"]').find('.active').removeClass('active');
 		$(this).parent().addClass('active');
 
-		$('section[data-pagerid="'+pagerid+'"] .step').removeClass('active');
-		$('section[data-pagerid="'+pagerid+'"] .step[data-stepid="'+targetid+'"]' ).addClass('active');
+		if($('section[data-pagerid="'+pagerid+'"]').find('section').length !== 0) {
+			$('section[data-pagerid="'+pagerid+'"] .step').not('section[data-pagerid!="'+pagerid+'"] .step').removeClass('active');
+			$('section[data-pagerid="'+pagerid+'"] .step[data-stepid="'+targetid+'"]' ).not('section[data-pagerid!="'+pagerid+'"] .step').addClass('active');
+		}
+		else {
+			$('section[data-pagerid="'+pagerid+'"] .step').removeClass('active');
+			$('section[data-pagerid="'+pagerid+'"] .step[data-stepid="'+targetid+'"]' ).addClass('active');
+		}
 	});
 
 	/* DROPDOWN LIST ITEMS */
