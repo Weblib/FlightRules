@@ -862,10 +862,6 @@ i {
     vertical-align: top;
     width: 30px;
 }
-.formbox .btn[type="submit"] {
-	margin:15px auto;
-	display:block;
-}
 .formbox .fieldlistitem {
 	margin:5px;
 	border:1px solid #eee;
