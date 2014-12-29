@@ -31,11 +31,11 @@ select {
 input[type="file"] {
 	display:none;
 }
-input:disabled {
-	background-color:#eee;
-}
 p {
 	margin:18px 5px;
+}
+.center {
+	text-align:center;
 }
 /************************* FONT *************************/
 @font-face {
@@ -647,6 +647,28 @@ i {
 .i_status_unknown {
 	background-position: -140px -56px;
 }
+
+.btn-action-topleft {
+	position:absolute;
+	top:5px;
+	left:5px;
+}
+.btn-action-topright {
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+.btn-action-botleft {
+	position:absolute;
+	bottom:5px;
+	left:5px;
+}
+.btn-action-botright {
+	position:absolute;
+	bottom:5px;
+	right:5px;
+}
+
 /************************* PERC BAR *************************/
 .ctlist li .percbar {
 	display:block;
@@ -774,7 +796,7 @@ i {
 .formbox {
 	width:100%;
 	max-width:1024px;
-	margin:0 auto;
+	margin:20px auto 10px;
 	border-bottom:1px solid #eee;
 }
 .formbox:last-child {
@@ -790,6 +812,7 @@ i {
 	text-align:right;
 	display:inline-block;
 	vertical-align: top;
+	line-height:28px;
 }
 .formbox .formfield input, .formbox .formfield select, .formbox .formfield textarea, .formbox .formfield .cke {
 	border:1px solid #e0e0e0;
@@ -843,7 +866,11 @@ i {
 	margin:15px auto;
 	display:block;
 }
-
+.formbox .fieldlistitem {
+	margin:5px;
+	border:1px solid #eee;
+	position:relative;
+}
 /************************* DATE PICKER *************************/
 .ui-widget-header {
     background: none repeat scroll 0 0 #f0f0f0;
@@ -915,7 +942,7 @@ i {
 	border:1px solid #15a4da;
 	border-radius:10px;
 	padding:25px;
-	margin:10px 0;
+	margin:10px 5px;
 }
 .infobox.warning {
 	background: #FFF url('../img/warning.png') 15px 50% no-repeat;
