@@ -697,6 +697,9 @@ i.grey {
 .bg_orange {
 	background-color:#E88828;
 }
+.bg_black {
+	background-color:#262626;
+}
 /************************* LOADING *************************/
 .loading_icon {
 	background-image: url("../img/loading.gif");
