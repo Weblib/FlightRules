@@ -550,6 +550,12 @@ i {
 	float:left;
 	margin-left:-5px;
 }
+i.black {
+	background-image: url("../img/sprite_000000.png");
+}
+i.grey {
+	background-image: url("../img/sprite_A3A3A3.png");
+}
 .btn.btn-action i {
 	margin:0;
 }
@@ -736,12 +742,10 @@ i {
 .pager li:first-child  {
 	border-left:0;
 }
-
 .pager li:hover {
 	background:#e0e0e0;
 	box-shadow: 0 -10px 10px -10px rgba(123, 123, 123, 0.3) inset;
 }
-
 .pager li a {
     display: block;
     height: 100%;
@@ -749,12 +753,10 @@ i {
 	font-size:16px;
 	color:#666;
 }
-
 .pager li.active a {
     font-weight:500;
 	background: transparent url('../img/pager_active.png') 50% 100% no-repeat;
 }
-
 .step {
 	display:none;
     width: calc(100% - 40px);
