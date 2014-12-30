@@ -3,6 +3,15 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+	copy: {
+	  main: {
+		files: [
+			{expand: true, src: ['src/img/*.png'], dest: 'build/img/', filter: 'isFile', flatten: true},
+			{expand: true, src: ['src/img/*.gif'], dest: 'build/img/', filter: 'isFile', flatten: true},
+			{expand: true, src: ['src/font/*'], dest: 'build/font/', filter: 'isFile', flatten: true}
+		]
+	  },
+	},
     jshint: {
       all: ['src/js/*.js']
     },
@@ -15,21 +24,6 @@ module.exports = function(grunt) {
         dest: 'build/js/<%= pkg.name %>.min.js'
       }
     },
-	sprite: {
-      all: {
-        src: 'src/img/icons/*.png',
-        destImg: 'build/img/sprite.png',
-        destCSS: 'src/css/sprite.css',
-		imgPath: '../img/sprite.png',
-		algorithm: 'binary-tree',
-		cssOpts: {
-		    // CSS template allows for overriding of CSS selectors
-		    'cssClass': function (item) {
-		      return '.i_' + item.name;
-		    }
-		 }
-      }
-	},
 	csslint: {
 		lax: {
 			options: {
@@ -47,28 +41,19 @@ module.exports = function(grunt) {
 			dest: 'build/css/',
 			ext: '.min.css'
 		}
-	},
-	concat: {
-		options: {
-		  separator: ';',
-		},
-		dist: {
-		  src: ['src/css/<%= pkg.name %>.min.css','src/css/sprite.min.css'],
-		  dest: 'build/css/<%= pkg.name %>.min.css',
-		},
 	}
   });
 
   // Load the plugin that provides the "uglify" task.
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
 
   // Default task(s).
-  grunt.registerTask('default', ['jshint','uglify',/*'sprite',*/'csslint','cssmin'/*,'concat'*/]);
+  grunt.registerTask('default', ['copy','jshint','uglify','csslint','cssmin']);
 
 };
