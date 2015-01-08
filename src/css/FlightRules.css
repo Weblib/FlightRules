@@ -942,14 +942,18 @@ i.grey {
 	background: #FFF url('../img/infos.png') 0 0 no-repeat;
 	border:1px solid #15a4da;
 	border-radius:10px;
-	padding:25px;
-	margin:10px 5px;
+	padding:25px 0 25px 60px;
+	margin:15px 5px;
 }
 .infobox.warning {
 	background: #FFF url('../img/warning.png') 15px 50% no-repeat;
 	color:#ff0909;
 	border:1px solid #FB9595;
-	padding:10px 0 10px 60px;
+
+}
+.formbox .infobox {
+	margin:15px auto;
+	width:60%;
 }
 /*************************** BLOCK_WARNING ******************/
 .block_warning {
