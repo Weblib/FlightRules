@@ -586,6 +586,9 @@ i.grey {
 .i_subscriptions {
 	background-position: -28px 0;
 }
+.i_portal {
+	background-position: -28px -28px;
+}
 
 .i_display_100 {
 	background-position: -56px 0;
