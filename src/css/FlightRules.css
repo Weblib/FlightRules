@@ -412,9 +412,14 @@ a:focus {
 	background-color:#2e2d2d;
 }
 
+.darknav li:hover a i {
+	opacity: 1;
+}
+
 .darknav .active, .darknav .active:hover {
 	background-color: #2e2d2d;
 	border-right: 3px solid #0088bc;
+	opacity: 1;
 }
 
 .darknav a {
@@ -426,7 +431,7 @@ a:focus {
 	padding:5px 0 5px 15px;
 }
 .darknav a i {
-
+	opacity: 0.6;
 	margin-right:10px;
 }
 .darknav .darknav_child.active {
