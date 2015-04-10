@@ -409,11 +409,14 @@ a:focus {
 
 }
 .darknav li:hover {
-	background-color:#2a2a2a;
+	background-color:#2e2d2d;
 }
+
 .darknav .active, .darknav .active:hover {
-	background-color:#1298ca;
+	background-color: #2e2d2d;
+	border-right: 3px solid #0088bc;
 }
+
 .darknav a {
 	line-height:26px;
 	font-size:16px;
