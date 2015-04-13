@@ -597,6 +597,10 @@ i.grey {
 .i_portal {
 	background-position: -28px -28px;
 }
+.i_user {
+	background-position: -28px -196px;
+}
+
 
 .i_display_100 {
 	background-position: -56px 0;
