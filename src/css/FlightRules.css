@@ -328,11 +328,8 @@ h5 {
 	font-size: 20px;
 	font-weight: bold;
 }
-.greybar i {
-	float: none;
-}
 .greybar .location-icon {
-	background-position: 0 -260px;
+	background-position: -166px -28px;
 }
 .greybar .datepicker-icon {
 	background-position: 50 -260px;
