@@ -317,7 +317,25 @@ h5 {
 	max-width:200px;
 }
 .greybar .datepicker {
-	max-width:80px;
+	max-width: 110px;
+	background-color: #3D3D3D;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 17px;
+}
+.greybar .datepicker-separator {
+	font-size: 20px;
+	font-weight: bold;
+}
+.greybar i {
+	float: none;
+}
+.greybar .location-icon {
+	background-position: 0 -260px;
+}
+.greybar .datepicker-icon {
+	background-position: 50 -260px;
 }
 .greybar .btn {
 	max-width:150px;
