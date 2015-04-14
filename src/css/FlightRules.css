@@ -329,10 +329,10 @@ h5 {
 	font-weight: bold;
 }
 .greybar .location-icon {
-	background-position: -166px -28px;
+	background-position: -166px 0px;
 }
 .greybar .datepicker-icon {
-	background-position: 50 -260px;
+	background-position: -166px -28px;
 }
 .greybar .btn {
 	max-width:150px;
@@ -341,7 +341,10 @@ h5 {
 .greybar .pull-right {
 	float:right;
 }
-
+.greybar .pull-right > div {
+	display: inline-block;
+	margin-right: 20px;
+}
 .checklist {
 	position:relative;
     border: 1px solid #c7c7c7;
