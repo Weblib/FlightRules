@@ -341,9 +341,15 @@ h5 {
 .greybar .pull-right {
 	float:right;
 }
-.greybar .pull-right > div {
+.greybar .pull-center {
+	text-align: center;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.greybar .pull-center > div {
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 .checklist {
 	position:relative;
