@@ -456,6 +456,7 @@ a:focus {
 	color:#FFF;
 	display:block;
 	padding:5px 0 5px 15px;
+	overflow: auto;
 }
 .darknav a i {
 	opacity: 0.6;
