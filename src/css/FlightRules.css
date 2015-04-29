@@ -322,11 +322,14 @@ h5 {
 	color: white;
 	text-align: center;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 14px;
 }
 .greybar .datepicker-separator {
 	font-size: 20px;
 	font-weight: bold;
+}
+.greybar input {
+	height: 26px;
 }
 .greybar .location-icon {
 	background-position: -166px 0px;
