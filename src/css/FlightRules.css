@@ -351,7 +351,7 @@ h5 {
 	margin-right: auto;
 }
 .greybar .pull-center > div {
-	display: inline-block;
+	display: inline-table;
 	margin-right: 10px;
 }
 .checklist {
